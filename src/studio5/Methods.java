@@ -70,6 +70,14 @@ public class Methods {
 	public static String substituteAll(String source, char target, String replacement) {
 		String result = "";
 		// TODO: Finish this method
+		for(int i = 0; i < source.length(); i ++) {
+			if(source.substring(i,i+1).equals(String.valueOf(target))) {
+				result = result+String.valueOf(replacement);
+			}
+			else{
+				result = result + source.substring(i,i+1);
+			}
+		}
 
 		return result;
 	}
