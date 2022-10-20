@@ -114,8 +114,7 @@ public class Methods {
 	
 	public static double arrayMean(int [] values) {
 	
-		double mean = arraySum(values)/values.length;
-		mean =  ((int) (mean * 100000) )/100000.0;
+		double mean = (double)arraySum(values)/values.length;
 		
 		return mean;
 	}
